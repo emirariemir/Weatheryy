@@ -45,25 +45,10 @@
                                 <color key="textColor" name="WeatherColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYa-Fi-Vj1">
-                                <rect key="frame" x="316" y="794" width="68" height="68"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="68" id="QoF-XU-i8K"/>
-                                    <constraint firstAttribute="width" constant="68" id="agj-iZ-YYe"/>
-                                </constraints>
-                                <color key="tintColor" red="0.97254901959999995" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" scale="large" weight="black"/>
-                                    <attributedString key="attributedTitle"/>
-                                    <color key="baseForegroundColor" red="0.97254901959999995" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </buttonConfiguration>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search a place..." textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="Z5G-Ts-CXh">
-                                <rect key="frame" x="30" y="813" width="271" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search a place..." textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Z5G-Ts-CXh">
+                                <rect key="frame" x="30" y="426.5" width="354" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="oml-fF-5FQ">
                                 <rect key="frame" x="30" y="346.5" width="284" height="60"/>
@@ -96,36 +81,55 @@
                                     <constraint firstAttribute="height" constant="120" id="wqi-ms-8nT"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYa-Fi-Vj1">
+                                <rect key="frame" x="30" y="480.5" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="QoF-XU-i8K"/>
+                                    <constraint firstAttribute="width" constant="68" id="agj-iZ-YYe"/>
+                                </constraints>
+                                <color key="tintColor" red="0.97254901959999995" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="34" scale="large" weight="black"/>
+                                    <attributedString key="attributedTitle"/>
+                                    <color key="baseForegroundColor" red="0.97254901959999995" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="searchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OWR-2G-lcm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EYa-Fi-Vj1" secondAttribute="trailing" constant="30" id="0am-LI-JEM"/>
                             <constraint firstItem="ncu-qC-Flb" firstAttribute="top" secondItem="tZx-01-QuA" secondAttribute="bottom" constant="12" id="0oL-jN-h4L"/>
                             <constraint firstItem="oml-fF-5FQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1Vy-rc-W3O"/>
-                            <constraint firstItem="EYa-Fi-Vj1" firstAttribute="leading" secondItem="Z5G-Ts-CXh" secondAttribute="trailing" constant="15" id="2IO-pM-EcD"/>
                             <constraint firstItem="aAZ-ZM-zFc" firstAttribute="top" secondItem="ncu-qC-Flb" secondAttribute="bottom" constant="12" id="3Xv-C9-u4t"/>
                             <constraint firstAttribute="bottom" secondItem="Aq5-V6-GFF" secondAttribute="bottom" id="8os-bG-E0t"/>
                             <constraint firstItem="tZx-01-QuA" firstAttribute="top" secondItem="u69-qm-kHa" secondAttribute="bottom" constant="40" id="9Tb-PP-dMa"/>
+                            <constraint firstItem="EYa-Fi-Vj1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="AYt-Uy-bxG"/>
                             <constraint firstItem="tZx-01-QuA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="CHx-29-Qlb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z5G-Ts-CXh" secondAttribute="bottom" constant="15" id="GQM-dR-jWJ"/>
+                            <constraint firstItem="Z5G-Ts-CXh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="GEu-Bb-OMq"/>
                             <constraint firstItem="oml-fF-5FQ" firstAttribute="top" secondItem="aAZ-ZM-zFc" secondAttribute="bottom" constant="30" id="QAe-dg-xJO"/>
                             <constraint firstItem="ncu-qC-Flb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="S5W-BU-YM4"/>
                             <constraint firstItem="aAZ-ZM-zFc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="V7p-Nu-7zR"/>
                             <constraint firstItem="Aq5-V6-GFF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a6A-2u-p08"/>
+                            <constraint firstItem="EYa-Fi-Vj1" firstAttribute="top" secondItem="Z5G-Ts-CXh" secondAttribute="bottom" constant="20" id="exk-23-u6f"/>
                             <constraint firstItem="Aq5-V6-GFF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gkF-T4-Z3N"/>
-                            <constraint firstItem="EYa-Fi-Vj1" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hEs-4D-sQy"/>
                             <constraint firstItem="tkb-gV-KYP" firstAttribute="top" secondItem="u69-qm-kHa" secondAttribute="bottom" constant="50" id="kk3-f5-oYC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aq5-V6-GFF" secondAttribute="trailing" id="mDp-i8-591"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tkb-gV-KYP" secondAttribute="trailing" constant="30" id="nBr-HV-h8Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z5G-Ts-CXh" secondAttribute="trailing" constant="30" id="nSW-jv-dNK"/>
                             <constraint firstItem="u69-qm-kHa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="nlx-xb-1fM"/>
-                            <constraint firstItem="Z5G-Ts-CXh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="p3P-XI-943"/>
                             <constraint firstItem="u69-qm-kHa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="pZv-5B-4bF"/>
+                            <constraint firstItem="Z5G-Ts-CXh" firstAttribute="top" secondItem="oml-fF-5FQ" secondAttribute="bottom" constant="20" id="xhg-le-AdF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cityLabel" destination="aAZ-ZM-zFc" id="X77-h8-utr"/>
                         <outlet property="conditionImageView" destination="tkb-gV-KYP" id="zBy-Cc-FGX"/>
+                        <outlet property="searchTextField" destination="Z5G-Ts-CXh" id="4BR-aw-rtE"/>
                         <outlet property="temperatureLabel" destination="ncu-qC-Flb" id="s2I-Kb-D7i"/>
                     </connections>
                 </viewController>

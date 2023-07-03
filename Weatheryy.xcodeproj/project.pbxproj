@@ -13,6 +13,7 @@
 		2D13AF9F2A517A6D00347A68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D13AF9D2A517A6D00347A68 /* Main.storyboard */; };
 		2D13AFA12A517A6F00347A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D13AFA02A517A6F00347A68 /* Assets.xcassets */; };
 		2D13AFA42A517A6F00347A68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D13AFA22A517A6F00347A68 /* LaunchScreen.storyboard */; };
+		2D13AFAF2A52D37700347A68 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D13AFAE2A52D37700347A68 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2D13AFA02A517A6F00347A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D13AFA32A517A6F00347A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D13AFA52A517A6F00347A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D13AFAE2A52D37700347A68 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		2D13AFAB2A517AC700347A68 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2D13AFAE2A52D37700347A68 /* WeatherModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				2D13AF9C2A517A6D00347A68 /* ViewController.swift in Sources */,
 				2D13AF982A517A6D00347A68 /* AppDelegate.swift in Sources */,
+				2D13AFAF2A52D37700347A68 /* WeatherModel.swift in Sources */,
 				2D13AF9A2A517A6D00347A68 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
