@@ -26,7 +26,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        print(searchTextField.text!)
         searchTextField.endEditing(true)
         return true
     }
@@ -41,6 +40,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        if let city = searchTextField.text {
+            weatherModel.fetchWeather(cityName: city)
+        }
+        
         searchTextField.text = ""
     }
 }
